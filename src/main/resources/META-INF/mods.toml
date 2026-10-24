@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "mobcontrol"
+version = "1.0.0"
+displayName = "Control de Mobs"
+description = '''
+Panel (/mobcontrol) para desactivar el spawn de cualquier mob (vanilla o de mods), elegir en que dimensiones
+puede aparecer y a que alturas, y controlar sus drops (quitar los originales y agregar items custom).
+'''
+
+[[dependencies.mobcontrol]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mobcontrol]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
